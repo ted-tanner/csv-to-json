@@ -1,8 +1,5 @@
 *.pyc
 __pycache__
 
-*.dylib
-*.dll
-*.so
 *.o
 a.out
