@@ -26,4 +26,7 @@ typedef struct _dynarr {
 void dynarr_shrink(DynArray* arr);
 void dynarr_push_multiple(DynArray* arr, void* item_arr, size_t count);
 
+DynArray _create_dynarr(size_t start_capacity, size_t element_size);
+void _dynarr_push(DynArray* arr, void* item_ptr);
+
 #endif
