@@ -8,7 +8,7 @@ char *csv_to_json(char *csv_buffer, size_t length)
 #endif
 {
 	LexedCsv lexed_csv = _lex_csv(csv_buffer, length);
-	DynArray json_buffer = new_dynarr(length + 256, char);
+	DynArray json_buffer = new_dynarr(length * 2, char);
 
 	if (lexed_csv.has_err)
 	{
