@@ -76,3 +76,7 @@ gcc -DDEBUG -g -Wall -fPIC -shared -o ../libs/csv-to-json.so dynarray.c csvjson.
 ```
 x86_64-w64-mingw32-gcc -DDEBUG -g -Wall -fPIC -shared -o ../libs/csv-to-json.dll dynarray.c csvjson.c
 ```
+
+## Notes
+
+The dynamic library for M1 Macs is out-of-date and needs to be recompiled. I do not have an M1 Mac, nor have I taken the time to find a cross-compiler. If you want to use the converter on an M1, you’ll need to recompile the library or you may run into a bug or two.
